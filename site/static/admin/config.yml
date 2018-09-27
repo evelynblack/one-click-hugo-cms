@@ -15,6 +15,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Related posts", name: "related", widget: "list", field: { label: "Post", name: "post", widget: "relation", collection: "post", searchFields: ["title"], valueField: "name", displayFields: ["title"] } }
   - name: "pages"
     label: "Pages"
     files:
