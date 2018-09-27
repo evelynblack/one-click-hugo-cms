@@ -19,7 +19,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: Contact Posts
         name: contact_posts
         widget: list
-        field:
+        fields:
           - {label: "Post", name: "post", widget: "relation", collection: "post", searchFields: ["title"], valueField: "title"}
   - name: "pages"
     label: "Pages"
