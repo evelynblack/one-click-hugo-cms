@@ -19,12 +19,9 @@ collections: # A list of collections the CMS should be able to edit
         name: "posts"
         widget: "list"
         field:
-          - label: "Post"
-            name: "post"
-            widget: "relation",
-            collection: "post",
-            searchFields: ["title"],
-            valueField: "title"
+          - label: "Image"
+            name: "image"
+            widget: "image"
   - name: "pages"
     label: "Pages"
     files:
